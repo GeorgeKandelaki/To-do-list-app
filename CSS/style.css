@@ -1,0 +1,124 @@
+/* //////////////////////////////////////////// */
+/* MAIN LAYOUT */
+/* //////////////////////////////////////////// */
+
+.main-frame {
+    margin: 1.5rem;
+}
+
+/* //////////////////////////////////////////// */
+/* HEADDER */
+/* //////////////////////////////////////////// */
+.header {
+    background-color: var(--light-gray);
+    margin: 0 1%;
+}
+
+.nav__tabs {
+    display: flex;
+    gap: 2rem;
+    height: 4.4rem;
+
+    padding: 1rem 1rem 0 1rem;
+}
+
+.nav__tab {
+    background-color: var(--dark-blue);
+    width: 25%;
+
+    display: flex;
+    align-items: center;
+}
+
+/* //////////////////////////////////////////// */
+/* GOALS CONTAINER */
+/* //////////////////////////////////////////// */
+.goals-box {
+    background-color: var(--dark-blue);
+    height: 100%;
+    width: 35rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.date-box {
+    background-color: var(--cyan);
+    width: 100%;
+    height: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal {
+    background-color: var(--dark-green);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-goal {
+    background-color: var(--light-cyan);
+    border: none;
+}
+
+/* //////////////////////////////////////////// */
+/* ADD GOAL BOX */
+/* //////////////////////////////////////////// */
+.add-goal-box {
+    width: 5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--dark-blue);
+    font-size: 3rem;
+}
+
+/* //////////////////////////////////////////// */
+/* CREATE GOALS */
+/* //////////////////////////////////////////// */
+
+.add-box-goal,
+.add-box-goal-parent {
+    background-color: var(--dark-blue);
+    width: 35rem;
+    max-height: 20rem;
+    border-radius: 1rem;
+
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-goal,
+.close {
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-size: 2.4rem;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+/* //////////////////////////////////////////// */
+/* ACTIVE */
+/* //////////////////////////////////////////// */
+
+.tab-active {
+    background-color: var(--light-blue);
+}
+
+.content-active {
+    display: flex;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="CSS/global.css" rel="stylesheet" />
+        <link href="CSS/style.css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do List</title>
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <main class="main-frame">
+            <header class="header">
+                <nav class="nav">
+                    <ul class="nav__tabs">
+                        <li class="nav__tab tab-active tab__goals" data-tab="1">
+                            Goals
+                        </li>
+                        <li class="nav__tab days" data-tab="2">Days</li>
+                        <li class="nav__tab stats" data-tab="3">Stats</li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section
+                class="section content-active"
+                id="section--1"
+                data-set="1"
+            >
+                <!-- <div class="goals-box">
+                    <div class="date-box">
+                        <h2 class="date">November 5</h2>
+                    </div>
+
+                    <div class="goals">
+                        <h4 class="subtitle margin-bottom-sm">Subtitle</h4>
+                        <ul class="goals__list margin-bottom-sm">
+                            <li class="goal" data-id="">
+                                <input type="checkbox" /> item 1
+                            </li>
+                            <li class="goal" data-id="">
+                                <input type="checkbox" /> item 1
+                            </li>
+                        </ul>
+
+                        <button class="btn add-goal margin-top-sm">
+                            &plus;
+                        </button>
+                    </div>
+                </div> -->
+                <button class="add-goal-box">+</button>
+            </section>
+            <section class="section" id="section--2" data-set="2">
+                <button class="add-goal-box">+</button>
+            </section>
+            <section class="section" id="section--3" data-set="3">
+                <button class="add-goal-box">+</button>
+            </section>
+        </main>
+
+        <div class="add-box-goal centered">
+            <div class="header-add">
+                <h2 class="heading-secondary">Add Goal</h2>
+                <button class="close-goal">X</button>
+            </div>
+            <div class="input-field goal-input">
+                <label for="goal">Your Goal</label>
+                <input
+                    type="text"
+                    placeholder="Your Goal"
+                    class="input input-goal"
+                />
+            </div>
+            <button class="btn-add add">add</button>
+        </div>
+
+        <div class="add-box-goal-parent centered">
+            <div class="header-add">
+                <h2 class="heading-secondary">Add New Goal Box</h2>
+                <button class="close">X</button>
+            </div>
+
+            <div class="input-field subtitle-input">
+                <label for="subtitle"> Subtitle</label>
+                <input
+                    name="subtitle"
+                    type="text"
+                    placeholder="Your Goal"
+                    class="input input-subtitle"
+                />
+            </div>
+
+            <div class="input-field date-input">
+                <label for="date">Date</label>
+                <input name="date" type="date" class="input input-date" />
+            </div>
+            <button class="btn-add add-box">add</button>
+        </div>
+    </body>
+</html>
